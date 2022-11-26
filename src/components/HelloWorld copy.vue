@@ -36,14 +36,14 @@
           <ul id="navMenu">
             <li id="flag-icon">
               <a>
-                <img src="../assets/arama.png" />
+                <img id="imgForMargin" src="../assets/arama.png" />
                 <p id="fontsize">Ara</p>
               </a>
             </li>
 
             <li id="flag">
               <a>
-                <img src="../assets/kalp.png" />
+                <img id="imgForMargin" src="../assets/kalp.png" />
 
                 <p id="fontsize">Favorilerim</p>
               </a>
@@ -51,7 +51,7 @@
 
             <li id="flag">
               <a>
-                <img src="../assets/sepet.png" />
+                <img id="marginDeneme" src="../assets/sepet.png" />
                 (0)
                 <p id="fontsize">Sepetim</p>
               </a>
@@ -117,9 +117,6 @@
 <style scoped>
 * {
   font-family: "Quicksand", sans-serif;
-}
-#imgForMargin {
-  margin-left: 20px;
 }
 h1 {
   background-color: #fff;
@@ -309,7 +306,6 @@ body {
   position: relative;
   width: auto;
   height: auto;
-  align-items: center;
   padding-left: 20px;
   padding-right: 20px;
   border-left-style: solid;
@@ -319,22 +315,20 @@ body {
   flex-direction: row;
 }
 #navMenu img {
-  align-items: center;
   width: 20px;
   height: 20px;
 }
 #navMenu li:hover {
-  align-items: center;
   cursor: pointer;
 }
 #navMenu a {
-  align-items: center;
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
 }
 #navMenu p {
   position: relative;
+  margin-left: 5px;
   margin-top: auto;
   margin-bottom: auto;
   height: auto;
